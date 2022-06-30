@@ -1,7 +1,9 @@
 #include <stdio.h>
-
+/*
+ *this function print a given string
+ */
 int main(void)
 {
-	puts("Programming is like building a multilingual pussle \n");
+	puts("Programming is like building a multilingual puzzle \n");
 	return (0);
 }
