@@ -4,20 +4,20 @@
  * @num: int type number
  * Return: value of the last digit
  */
-int print_last_digit(int n)
+int print_last_digit(int num)
 {
-	int nv;
+	int ln;
 
-	if (n < 0)
+	if (num < 0)
 	{
-		nv = -1 * (n % 10);
-		_putchar(nv + '0');
-		return (nv);
+		ln = -1 * (num % 10);
+		_putchar(ln + '0');
+		return (ln);
 	}
 	else
 	{
-		nv = n % 10;
-		_putchar(nv + '0');
-		return (nv);
+		ln = num % 10;
+		_putchar(ln + '0');
+		return (ln);
 	}
 }
