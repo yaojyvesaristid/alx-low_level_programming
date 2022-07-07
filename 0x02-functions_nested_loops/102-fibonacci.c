@@ -10,7 +10,7 @@ int main(void)
 	int cpt = 2;
 	long int i = 1, j = 2, k;
 
-	printf("%i, ", i);
+	printf("%ld, ", i);
 	while (cpt <= 50)
 	{
 		if (cpt == 50)
