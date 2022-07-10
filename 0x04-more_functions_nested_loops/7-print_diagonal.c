@@ -9,8 +9,10 @@ void print_diagonal(int n)
 	int i = 2, count = 0, k;
 
 	if (n == 1)
+	{
 		_putchar('\\');
-	_putchar('\n');
+		_putchar('\n');
+	}
 	else if (n > 1)
 	{
 		_putchar('\\');
