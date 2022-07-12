@@ -20,7 +20,7 @@ int _atoi(char *s)
 			sign = sign * (-1);
 		if (s[i] > 47 && s[i] < 58)
 		{
-			res = res * 10 + s[i] - '0';
+			res = (res * 10) - (s[i] - '0');
 			if (!(s[i + 1] > 47 && s[i + 1] < 58))
 				break;
 		}
