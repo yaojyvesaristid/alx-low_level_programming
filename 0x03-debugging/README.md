@@ -1,0 +1,1 @@
+activity for debugging lecon
