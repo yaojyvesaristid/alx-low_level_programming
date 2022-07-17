@@ -6,8 +6,8 @@
  */
 char *leet(char *s)
 {
-	char lettres[] = {a, e, o, t, l};
-	char LETTRES[] = {A, E, O, T, L};
+	char lettres[] = {'a', 'e', 'o', 't', 'l'};
+	char LETTRES[] = {'A', 'E', 'O', 'T', 'L'};
 	int values[] = {4, 3, 0, 7, 1};
 	int i, j;
 
