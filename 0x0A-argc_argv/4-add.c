@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		{
 			val = strtol(argv[i], &endPtr, 10);
 			if (!*endPtr)
-				sum += num;
+				sum += val;
 			else
 			{
 				printf("Error\n");
