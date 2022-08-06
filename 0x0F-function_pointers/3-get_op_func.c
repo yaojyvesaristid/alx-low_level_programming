@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * get_op_func - select the correct operation function
  * @s: operator argument
@@ -18,8 +19,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0, j;
 
-	for (j = 0; s[j] != '\0'; j++)
-		;
+	j = strlen(s);
 	while (i < 5 && j == 1)
 	{
 		if (operations[i].op[0] == s[0])
