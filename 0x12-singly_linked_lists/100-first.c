@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
- * before_main - Print statement within this fxn before running main fxn.
+ * myStartMess - Print statement within this fxn before running main fxn.
  */
 void myStartMess(void) __attribute__ ((constructor));
 
 void myStartMess(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,
+			\nI bore my house upon my back!\n");
 }
