@@ -13,7 +13,7 @@ size_t free_listint_safe(listint_t **h)
 
 	len = 0;
 	l = *h;
-	if (l->next == NULL || l->next == l)
+	if (l->next == NULL)
 	{
 		len = 1;
 		free(*h);
@@ -24,6 +24,8 @@ size_t free_listint_safe(listint_t **h)
 		len++;
 		temp = l;
 		l = l->next;
+		if (temp == l)
+			free(l)
 		free(temp);
 
 		if (temp < l)
