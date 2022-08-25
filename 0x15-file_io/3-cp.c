@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	fileTo = argv[2];
 	if (fileFrom != NULL)
 	{
-		fdFileFrom = open(fileFrom, O_RDWR);
+		fdFileFrom = open(fileFrom, O_RDONLY);
 		if (fdFileFrom == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s", fileFrom);
