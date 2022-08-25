@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	fdFileTo = open(fileTo, O_RDONLY | O_TRUNC);
-	if (fdFile == -1)
+	if (fdFileTo == -1)
 	{
 		fdFileTo = open(fileTo, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 		if (fdFileTo == -1)
