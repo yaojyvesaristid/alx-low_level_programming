@@ -28,11 +28,15 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 	}
-	fdFileTo = open(fileTo, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fdFileTo == -1)
+	fdFileTo = open(fileTo, O_RDONLY | O_TRUNC);
+	if (fdFile == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", fileTo);
-		exit(99);
+		fdFileTo = open(fileTo, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+		if (fdFileTo == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s", fileTo);
+			exit(99);
+		}
 	}
 	do {
 		readFileFrom = read(fdFileFrom, buffer, 1024);
